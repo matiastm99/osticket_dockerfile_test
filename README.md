@@ -20,12 +20,19 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
    Esto configura la db: 
 
     *Enter current password for root (enter for none): mandamos enter
+   
     OK, successfully used password, moving on...
+   
     Switch to unix_socket authentication [Y/n] n
+   
     Change the root password? [Y/n] y
+   
     Remove anonymous users? [Y/n] y
+   
     Disallow root login remotely? [Y/n] y
+   
     Remove test database and access to it? [Y/n] y
+   
     Reload privilege tables now? [Y/n] y*
 
    Ahora creamos la db:
