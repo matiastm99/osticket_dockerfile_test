@@ -72,5 +72,8 @@ Nos metemos en *http://localhost:8080* y con eso deberia andar
    
 6. **EXTRA**
 
-   En el archivo */etc/apache2/sites-available/osticket.conf* si cambiamos la linea *ServerName localhost* a *ServerName ip_de_tu_compu* queda un lindo sistema de tickets en tu red local. Yo subi un par de tickets desde el celu!
+   En el archivo */etc/apache2/sites-available/osticket.conf* si cambiamos la linea *ServerName localhost* a *ServerName ip_de_tu_compu* queda un lindo sistema de tickets en tu red local. En ese caso se accede: *ip_elegida:8080*
+
+
+Yo subi un par de tickets desde el celu!
    
