@@ -9,6 +9,7 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
 
 
 1. **Creamos la imagen**
+
    Bajar el dockerfile y tirar un cd a su ubicacion, luego corremos:
 
    docker build -t *nombre_imagen* .
@@ -20,8 +21,12 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
 
    Arranca a correr el container, ahora le mandamos lo siguiente:
 
+
+   *service mariadb start*
+
    *mysql_secure_installation*
    
+
    Ahora simplemente hay que responder...
 
     *Enter current password for root (enter for none): mandamos enter*
