@@ -13,7 +13,7 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
 
    docker build -t *nombre_imagen* .
 
-3. **Levantamos osTicket**
+2. **Levantamos osTicket**
 
    docker run -itp 8080:80 --name *nombre_container* *nombre_imagen*
 
@@ -38,7 +38,7 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
     *Reload privilege tables now? [Y/n] y*
 
 
-   Ahora creamos la db:
+3. **Ahora creamos la db**
 
    mysql -u root -p
    create database *nombre_db*;
@@ -52,12 +52,12 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
    exit;
 
 
-   Para finalizar:
+4. **Para finalizar**
 
    *service mariadb restart && service apache2 restart*
 
 
-Nos metemos en http://localhost:8080 y con eso deberia andar
+Nos metemos en *http://localhost:8080* y con eso deberia andar
    
  
    
