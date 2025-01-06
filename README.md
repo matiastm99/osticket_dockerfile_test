@@ -41,18 +41,23 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
 3. **Ahora creamos la db**
 
    mysql -u root -p
+   
    create database *nombre_db*;
+   
    exit;
    
    OPCIONAL:
 
    podemos crear un nuevo usuario para administrar la db o simplemente utilizar root
+   
    CREATE USER '*nombre_usuario*'@'localhost' IDENTIFIED BY 'una_buena_password';
+   
    GRANT ALL PRIVILEGES ON *nombre_db*.* TO *nombre_usuario*@localhost IDENTIFIED BY "una_buena_password";
+   
    exit;
 
 
-4. **Para finalizar**
+5. **Para finalizar**
 
    *service mariadb restart && service apache2 restart*
 
