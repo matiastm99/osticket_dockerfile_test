@@ -21,7 +21,8 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
    Arranca a correr el container, ahora le mandamos lo siguiente:
 
    *mysql_secure_installation*
-   Esto configura la db: 
+   
+   Ahora simplemente hay que responder...
 
     *Enter current password for root (enter for none): mandamos enter*
    
@@ -50,9 +51,9 @@ A la db (mariadb/mysql) hay que configurarla de manera manual y luego reiniciar 
 
    podemos crear un nuevo usuario para administrar la db o simplemente utilizar root
    
-   CREATE USER '*nombre_usuario*'@'localhost' IDENTIFIED BY 'una_buena_password';
+   create user '*nombre_usuario*'@'localhost' identified by 'una_buena_password';
    
-   GRANT ALL PRIVILEGES ON *nombre_db*.* TO *nombre_usuario*@localhost IDENTIFIED BY "una_buena_password";
+   grant all privileges on *nombre_db*.* to *nombre_usuario*@localhost identified by "una_buena_password";
    
    exit;
 
