@@ -34,4 +34,3 @@ RUN echo "<VirtualHost *:80>\n\
 
 RUN a2ensite osticket.conf && a2enmod rewrite
 
-RUN cd /var/www/html/osticket/upload/
